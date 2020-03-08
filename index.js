@@ -30,7 +30,7 @@ var rtl = function rtl() {
   return function (p) {
     var cssStyles = _styledComponents.css.apply(void 0, styles);
 
-    var dir = p.dir || p.theme.dir;
+    var dir = p.dir || p.theme.dir || p.direction || p.theme.direction;
     return dir === 'rtl' ? (0, _cssjanus.transform)(cssToString(cssStyles, p)) : cssStyles;
   };
 };
