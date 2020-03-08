@@ -1,7 +1,7 @@
 # styled-components-rtl
 Allows u add ltr-rtl direction switching for your styled components
 
-##Using
+## Using
 ```
 import {ThemeProvider} from "styled-components"
 import rtl from "styled-components-rtl";
@@ -15,6 +15,7 @@ const ListItem = styled.div`
 
 const theme = {
   dir: "rtl"
+  // OR direction: "rtl"
 };
 
 render(
