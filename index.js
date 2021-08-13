@@ -15,7 +15,7 @@ function cssToString(cssStyles, p) {
 
     if (typeof v === 'function') {
       var vResult = v(p);
-      addition = typeof vResult === 'string' ? vResult : cssToString(vResult, p);
+      addition = typeof vResult === 'string' || typeof vResult === 'number' ? vResult : cssToString(vResult, p);
     }
 
     return result + addition;
